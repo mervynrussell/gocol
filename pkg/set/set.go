@@ -22,7 +22,7 @@ type mapSet[T comparable] struct {
 	data map[T]bool
 }
 
-// New create Set implementation based on mapSet
+// New Set based on mapSet
 func New[T comparable]() Set[T] {
 	return &mapSet[T]{data: make(map[T]bool)}
 }
